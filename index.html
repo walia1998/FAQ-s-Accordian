@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ's</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/adc3489dd9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h2>FAQ's</h2>
+
+    <div class="accordian">
+      <div class="question">
+        <h4>
+          1. What is the difference between var, let, and const in JavaScript?
+        </h4>
+        <i class="icon fa-solid fa-caret-up"></i>
+      </div>
+      <div class="answer">
+       <p>var is function-scoped, allowing redeclaration, and has hoisting behavior, which can cause unexpected issues. let is block-scoped, cannot be redeclared in the same scope, and avoids many problems var can cause. const is also block-scoped but, unlike let, it creates an immutable binding, meaning the variable cannot be reassigned after it is declared.</p> 
+      </div>
+    </div>
+    <div class="accordian">
+        <div class="question">
+          <h4>
+            2. How does JavaScript handle asynchronous code execution?
+          </h4>
+          <i class="icon fa-solid fa-caret-up"></i>
+        </div>
+        <div class="answer">
+        <p>JavaScript uses an event-driven, non-blocking model to handle asynchronous operations. Functions like setTimeout, Promises, and async/await allow code to execute without blocking the main thread. The event loop manages the execution order, ensuring that asynchronous code runs only when the call stack is clear, improving performance and user experience by keeping the UI responsive.</p>  
+        </div>
+      </div>
+      <div class="accordian">
+        <div class="question">
+          <h4>3. What is a closure in JavaScript?</h4>
+           
+          <i class="icon fa-solid fa-caret-up"></i>
+        </div>
+        <div class="answer">
+         <p>A closure is a function that retains access to its lexical environment, even after the outer function has returned. This allows inner functions to access variables from their outer scope. Closures are powerful for creating private variables or functions, managing state, and designing callback functions, making them an essential concept in JavaScript for building maintainable code.</p> 
+        </div>
+      </div>
+      <div class="accordian">
+        <div class="question">
+          <h4>
+            4. What is the purpose of the this keyword in JavaScript?
+          </h4>
+          <i class="icon fa-solid fa-caret-up"></i>
+        </div>
+        <div class="answer">
+          <p>The this keyword in JavaScript refers to the context in which a function is called. Its value depends on how the function is invoked: in a method, this refers to the object the method belongs to; in a regular function, it may refer to the global object (window in browsers) or be undefined in strict mode. Understanding this is crucial for working with object-oriented JavaScript.</p>
+        </div>
+      </div>
+      <div class="accordian">
+        <div class="question">
+          <h4>
+            5. What are arrow functions, and how do they differ from regular functions?
+          </h4>
+          <i class="icon fa-solid fa-caret-up"></i>
+        </div>
+        <div class="answer">
+         <p>Arrow functions are a concise syntax for writing functions in JavaScript. They differ from regular functions in several ways: they do not have their own this binding, making them ideal for callbacks or methods where the context should remain consistent; they cannot be used as constructors; and they have an implicit return for single-expression functions, reducing boilerplate code.</p>
+        </div>
+      </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
